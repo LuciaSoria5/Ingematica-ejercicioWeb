@@ -8,18 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="docs\**" />
     <Compile Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="docs\**" />
     <Content Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="docs\**" />
     <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <None Remove="docs\**" />
     <None Remove="wwwroot\NewFolder1\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MailKit" Version="4.9.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="docs\" />
   </ItemGroup>
 
 </Project>
