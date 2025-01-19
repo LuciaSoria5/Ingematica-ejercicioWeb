@@ -1,0 +1,240 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Lucia Soria";
+}
+
+<div class="container">
+    <h1 class="text-center display-4">@ViewData["Title"]</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="~/fotolucia.jpg" class="img-fluid" alt="Lucia Soria">
+        </div>
+        <div class="col-md-9">
+            <p class="lead">¡Mucho gusto! Me llamo Lucía, soy Técnica Universitaria en Informática, Docente Universitaria de programación y estudiante de Licenciatura en Sistemas.</p>
+            <p class="lead">Soy una persona apasionada, con muchas ganas de conocer nuevos compañeros y de ampliar mis conocimientos aplicando todo lo que sé sobre gestión, desarrollo y diseños arquitectónicos.</p>
+            <p class="lead">En este sitio podrás encontrar información sobre mí y mis redes sociales.</p>
+        </div>
+    </div>
+    @* <h2 class="text-center display-4">Descarga mi CV</h2> *@
+    <div class="d-grid gap-2 col-4 mx-auto mt-2 mb-2">
+        <a href="~/LuciaSoria.pdf" class="btn btn-outline-primary btn-lg" role="button" target="_blank" download><i class="bi bi-file-earmark-person m-2"></i>Descargar CV</a>
+    </div>
+
+
+    <h2 class="text-center display-4">Experiencia</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Docente Universitaria - Introducción a la Programación</h5>
+                    <p class="card-text">Universidad Nacional de General Sarmiento.</p>
+                    <p class="card-text">Marzo 2023 | Actualidad.</p>
+                    <ul>
+                        <li>Diseño y corrección de parciales</li>
+                        <li>Diseño y corrección de trabajos prácticos basados en APIs</li>
+                        <li>Planificación del cronograma</li>
+                        <li>Enseñanza de Python</li>
+                        <li>Herramientas de control de versiones: Git, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrolladora Fullstack</h5>
+                    <p class="card-text">Universidad Nacional de General Sarmiento.</p>
+                    <p class="card-text">Marzo 2023 | Actualidad.</p>
+                    <ul>
+                        <li>Desarrollo de endpoints utilizando Django Rest Framework</li>
+                        <li>Diseño y desarrollo del Front del proyecto utilizando React</li>
+                        <li>Integración con otros proyectos utilizando Microservicios</li>
+                        <li>Comunicación Front-Back</li>
+                        <li>Diseño y gestión de la base de datos MySQL</li>
+                        <li>Despliegue del proyecto utilizando la plataforma Render</li>
+                        <li>Estimación y asignación de tareas</li>
+                        <li>Trabajo en equipo y coordinación del mismo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Transmisora electoral</h5>
+                    <p class="card-text">Correo Argentino.</p>
+                    <p class="card-text">2021 y 2023.</p>
+                    <p class="card-text">Escaneo y transmisión de telegramas electorales vía el Sistema de Transmisión Electoral.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="text-center display-4">Educación</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Licenciatura en Sistemas</h5>
+                    <p class="card-text">Universidad Nacional de General Sarmiento.</p>
+                    <p class="card-text">2020 | Actualidad.</p>
+                    <ul>
+                        <li>33 de 37 materias aprobadas</li>
+                        <li>Fecha estimada de graduación: diciembre 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Tecnicatura Universitaria en Informática</h5>
+                    <p class="card-text">Universidad Nacional de General Sarmiento.</p>
+                    <p class="card-text">2020 | 2023 (<b>Finalizada</b>)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="text-center display-4">Mis conocimientos</h2>
+    <h3 class="text-center display-6 mt-3">Conocimientos Técnicos</h3>
+    <div class="row row-cols-2 row-cols-md-3 g-4">
+        <div class="col-sm-6 mb-2 mb-sm-0">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Front-end</h5>
+                    <ul>
+                        <li>Lenguajes: JavaScript</li>
+                        <li>Frameworks y Librerías: React, React Hooks, Redux, React Router, Context API</li>
+                        <li>Testing: Jest</li>
+                        <li>Otros: Consumo de APIs REST, MUI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Back-end</h5>
+                    <ul>
+                        <li>
+                            Lenguajes: Python, Java, C#
+                        </li>
+                        <li>Frameworks: .NET, Entity Framework, Django Framework, Django ORM, Django Rest Framework, Autenticación y autorización.</li>
+                        <li>Testing: JUnit, Unittest, Selenium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Bases de Datos</h5>
+                    <ul>
+                        <li>SQL: PostgreSQL, MySQL</li>
+                        <li> NoSQL: MongoDB, CassandraDB, ArangoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Idiomas</h5>
+                    <ul>
+                        <li>Inglés: Nivel B2 - CEFR (Bilingüe)</li>
+                        <li>Español: Nativo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Control de versiones</h5>
+                    <p class="card-text"> Git</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Metodologías</h5>
+                    <p class="card-text">Scrum, Kanban</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Patrones de diseño</h5>
+                    <p class="card-text">Microservicios, MVC, Lazy Load, etc</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">SO</h5>
+                    <p class="card-text">Linux, Windows</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center display-6 mt-3">Habilidades Personales</h3>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col-sm-6 mb-2 mb-sm-0">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Comunicación efectiva</h5>
+                 </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Trabajo en equipo</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Liderazgo</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Aprendizaje rápido</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Autodidacta y organizada</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Adaptabilidad</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card h-40 border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Creatividad y resolución de problemas</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

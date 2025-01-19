@@ -1,0 +1,29 @@
+﻿@page
+@model RedesModel
+@{
+    ViewData["Title"] = "¡Contáctame!";
+}
+
+<h1 display-4>@ViewData["Title"]</h1>
+
+<form method="post" onsubmit="sendMail(event)">
+    <div class="mb-3">
+        <label for="from_name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="from_name" name="from_name" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
+    </div>
+    <button type="submit" class="col-3 mx-auto btn btn-outline-primary mb-3">Enviar</button>
+</form>
+
+<h3 display-4>O bien... visita mis redes sociales:</h3>
+<div class="d-grid gap-2 col-6 mx-auto">
+    <a href="https://luciasoria5.github.io/portfolio/" class="btn btn-outline-primary btn-lg" role="button"><i class="bi bi-globe m-2"></i>¡Visita mi portfolio!</a>
+    <a href="https://www.linkedin.com/in/luc%C3%ADa-soria-7a66411b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="btn btn-outline-primary btn-lg" role="button"><i class="bi bi-linkedin m-2"></i>Visita mi perfil de LinkedIn</a>
+</div>
